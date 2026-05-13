@@ -18,7 +18,7 @@ export class User {
   @Prop({default:Role.Student, enum: Role})
   role: Role;
 
-  @Prop({required:true})
+  @Prop({required:true, select:false})
   password: string;
 }
 
